@@ -223,6 +223,60 @@ a:hover, a:active, a:focus {
   Home section              
 -----------------------------------------*/
 
+/* Navbar Container */
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff; /* Adjust to match the theme */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar Brand */
+.sticky-navbar .navbar-brand {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 18px;
+  color: #303F9F; /* Matches the theme color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Navbar Menu */
+.sticky-navbar .navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.sticky-navbar .navbar-menu li {
+  display: inline-block;
+}
+
+.sticky-navbar .navbar-menu a {
+  text-decoration: none;
+  color: #282828;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.sticky-navbar .navbar-menu a:hover {
+  color: #303F9F; /* Highlight effect */
+}
+
+/* Add Spacing for Content Below Navbar */
+body {
+  padding-top: 60px; /* Adjust based on navbar height */
+}
+
+
 #home {
   background: url('../images/Background.png') center center / cover no-repeat fixed;
   background-size: cover;
