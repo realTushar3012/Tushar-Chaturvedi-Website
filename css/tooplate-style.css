@@ -224,7 +224,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-  background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/Background.png') center center / cover no-repeat fixed;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
@@ -240,6 +240,37 @@ a:hover, a:active, a:focus {
   text-align: right;
 }
 
+/*
+Skills
+*/
+#skills {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+.skill-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill-item i {
+  font-size: 50px;
+  color: #303F9F;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.skill-item h4 {
+  font-size: 20px;
+  color: #282828;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.skill-item p {
+  color: #696969;
+  font-size: 16px;
+}
 
 
 /*---------------------------------------
