@@ -222,54 +222,82 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
   Home section              
 -----------------------------------------*/
-
-/* Navbar Container */
+/* Navbar Styling */
 .sticky-navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  background: #ffffff; /* Adjust to match the theme */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #52796f; /* Matches your color scheme */
   z-index: 1000;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 10px 0; /* Adjust padding for height */
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Navbar Brand */
-.sticky-navbar .navbar-brand {
-  font-family: 'Roboto Mono', sans-serif;
-  font-size: 18px;
-  color: #303F9F; /* Matches the theme color */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space out brand and links */
+  align-items: center; /* Vertically center content */
+  width: 80%; /* Adjust width for better layout */
+  max-width: 1200px;
+}
+
+.navbar-brand {
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 2.5rem; /* Adjusted for readability */
+  color: #fefae0;
   text-decoration: none;
-  font-weight: bold;
 }
 
-/* Navbar Menu */
-.sticky-navbar .navbar-menu {
+.navbar-menu {
   list-style: none;
+  display: flex;
+  gap: 40px; /* Increase space between links */
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 20px;
-  align-items: center;
 }
 
-.sticky-navbar .navbar-menu li {
-  display: inline-block;
-}
-
-.sticky-navbar .navbar-menu a {
+.nav-link {
   text-decoration: none;
-  color: #282828;
-  font-size: 16px;
-  font-family: 'Lora', serif;
-  padding: 5px 10px;
-  transition: color 0.3s ease;
+  font-family: "Poppins", sans-serif; /* Clean, modern font */
+  font-size: 1.4rem; /* Adjust font size for better readability */
+  color: #fefae0;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-.sticky-navbar .navbar-menu a:hover {
-  color: #303F9F; /* Highlight effect */
+.nav-link:hover {
+  color: #e6ccb2; /* Hover effect */
 }
+
+/* Hidden Navbar on Scroll */
+.hidden-navbar {
+  transform: translateY(-100%);
+}
+
+/* Body Padding */
+body {
+  padding-top: 80px; /* Space for the fixed navbar */
+}
+
+
+/* Body Padding */
+body {
+  padding-top: 80px; /* Space for the fixed navbar */
+}
+
+
+/* Add space for content below the navbar */
+body {
+  padding-top: 80px; /* Adjust based on the navbar height */
+}
+
+
+
 
 /* Add Spacing for Content Below Navbar */
 body {
@@ -278,21 +306,26 @@ body {
 
 
 #home {
-  background: url('../images/Background.png') center center / cover no-repeat fixed;
-  background-size: cover;
-  background-position: center center;
-  display: -webkit-box;
-  display: -webkit-flex;
-   display: -ms-flexbox;
+  background: url('../images/MyPic.png') no-repeat center center; /* Center horizontally and vertically */
+  background-size: cover; /* Fill the section while maintaining the image proportions */
+  background-position: center bottom; /* Focus on the bottom portion of the image */
+  height: 100vh; /* Full viewport height */
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-   align-items: center;
-  height: 100vh;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
   position: relative;
-  text-align: right;
+  text-align: center; /* Center align the text */
 }
+.home-thumb {
+  position: absolute; /* Position it absolutely within the #home section */
+  top: 50%; /* Adjust this value to move it above your head */
+  left: 50%; /* Center horizontally */
+  transform: translate(-10%, -110%); /* Center it accurately */
+  text-align: center; /* Ensure the text and button are aligned */
+  color: white; /* Ensure the text is visible */
+}
+
+
 
 /*
 Skills

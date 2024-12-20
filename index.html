@@ -25,6 +25,9 @@
      <meta name="copyright" content="2024, Tushar Chaturvedi">
      <meta name="author" content="Tushar Chaturvedi">
 
+     <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+
      <title>Tushar Chaturvedi's Personal Website</title>
      <!--
 
@@ -52,17 +55,38 @@ http://www.tooplate.com/view/2087-kalay
 </head>
 
 <body>
-     <nav class="navbar sticky-navbar">
-          <div class="container">
-               <a href="#home" class="navbar-brand">Home</a>
-               <ul class="navbar-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-               </ul>
+     <nav id="navbar" class="sticky-navbar">
+          <div class="navbar-container">
+            <a href="#home" class="navbar-brand">tushar</a>
+            <ul class="navbar-menu">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#skills" class="nav-link">Skills</a></li>
+              <li><a href="#work" class="nav-link">Work</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
           </div>
-     </nav>
+        </nav>
+        
+        
+        <script>
+          let lastScrollY = window.scrollY;
+        
+          window.addEventListener("scroll", () => {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > lastScrollY) {
+              // Scrolling down
+              navbar.classList.add("hidden-navbar");
+            } else {
+              // Scrolling up
+              navbar.classList.remove("hidden-navbar");
+            }
+            lastScrollY = window.scrollY;
+          });
+        </script>
+        
+        
+        
 
      <!-- PRE LOADER -->
      <div class="preloader">
@@ -119,13 +143,13 @@ http://www.tooplate.com/view/2087-kalay
                                    </li>
 
                                    <li>
-                                        <strong>Places Lived:</strong>
-                                        <span>Singapore, Japan, India, Dubai</span>
+                                        <strong>Industries of Interest:</strong><br>
+                                        <span>Tech, Finance, Healthcare, Automotive, AI</span>
                                    </li>
 
                                    <li>
-                                        <strong>Current Location:</strong>
-                                        <span>Ithaca, NY</span>
+                                        <strong>Languages:</strong>
+                                        <span>English, Hindi, Chinese, Japanese</span>
                                    </li>
 
                                    <li>
@@ -215,6 +239,151 @@ http://www.tooplate.com/view/2087-kalay
                          </div>
 
                     </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- PROJECT SECTION -->
+     <section id="projects" class="parallax-section">
+          <div class="container">
+               <div class="row">
+
+                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                         <!-- SECTION TITLE -->
+                         <h2>Projects</h2>
+                         <p>Click on any project to learn more</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                         <a target="_blank" href="https://github.com/mayigrin/movieFindr">
+                              <div class="service-thumb">
+                                   <i class="fa fa-film" style="font-size: 45px; padding-left: 15px;"></i>
+                                   <h4 class="white-color">Movie Findr</h4>
+                                   <p>This program lets users swipe through movies or type in
+                                        their favorites and then easily figure out what movie to watch with their
+                                        friends.</p>
+                                   <div class="skill-container">
+                                        <button class="skill">
+                                             <h6>Python</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>Django</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>React</h6>
+                                        </button>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                         <a target="_blank" href="https://github.com/realTushar3012/AI_Hedge_Fund">
+                              <div class="service-thumb">
+                                   <i class="fa fa-blind" style="font-size: 45px; padding-left: 15px;"></i>
+                                   <h4 class="white-color">AI Hedge Fund</h4>
+                                   <p>This is a proof concept for an AI-powered hedge fund. 
+                                        The goal of this project is to explore the use of AI to make trading decisions. 
+                                        This project is for educational purposes only and is not intended for real trading 
+                                        or investment.</p>
+                                   <div class="skill-container">
+                                        <button class="skill">
+                                             <h6>Python</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>Pandas</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>Matplotlib</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>LangGraph</h6>
+                                        </button>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                         <a target="_blank" href="https://github.com/PedroTheOlive/INFO3300-2">
+                              <div class="service-thumb">
+                                   <i class="fa fa-map-marker" style="font-size: 45px; padding-left: 15px;"></i>
+                                   <h4 class="white-color">American Crime Unwrapped</h4>
+                                   <p>I created an interactive data visualization for crime in the US overtime,
+                                        allowing users to assess the various contributing socio-economic factors.</p>
+                                   <div class="skill-container">
+                                        <button class="skill">
+                                             <h6>HTML</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>CSS</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>Javascript</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>d3.js</h6>
+                                        </button>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+
+               </div>
+              
+               <br>
+               <br>
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                         <a target="_blank" href="https://github.com/realTushar3012/Tushar-Chaturvedi-Website">
+                              <div class="service-thumb">
+                                   <i class="fa fa-mouse-pointer" style="font-size: 50px; padding-left: 15px;"></i>
+                                   <h4 class="white-color">Personal Website</h4>
+                                   <p>I built this website by combining two existing HTML/CSS & Javascript templates and
+                                        modifying the result to fit my needs. </p>
+                                   <div class="skill-container">
+                                        <button class="skill">
+                                             <h6>HTML</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>CSS</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>Javascript</h6>
+                                        </button>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                         <a target="_blank" href="https://github.coecis.cornell.edu/cs4701-24fa-projects/YD_CASC-_aa779_as2839_tic4_yc698">
+                              <div class="service-thumb">
+                                   <i class="fa fa-window-maximize" style="font-size: 50px; padding-left: 15px;"></i>
+                                   <h4 class="white-color">RAG Health Assistant w/ Self-Querying Retreival </h4>
+                                   <p>Overrides "new tab" page and shows html page that displays date & time, useful
+                                        links, and a notepad that can be edited and saved.</p>
+                                   <div class="skill-container">
+                                        <button class="skill">
+                                             <h6>Python</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>TypeScript</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>LangChain</h6>
+                                        </button>
+                                        <button class="skill">
+                                             <h6>Pincecone (vector store)</h6>
+                                        </button>
+                                   </div>
+                              </div>
+                         </a>
+                    </div>
+                    <br>
+                    <br>
 
                </div>
           </div>
@@ -369,14 +538,7 @@ http://www.tooplate.com/view/2087-kalay
                                         <span> | </span>
                                         <span>May 2024 - Present</span>
                                    </em>
-                                   <ul style="list-style-type:disc;">
-                                        <li>Developed a Snowflake- and AWS-powered real-time infrastructure tracking
-                                             app, reducing response time by 25%.</li>
-                                        <li>Designed ML starter kits on AWS SageMaker, cutting development time for
-                                             predictive analytics by 30 hours.</li>
-                                        <li>Directed web scraping and sentiment analysis using BeautifulSoup and spaCy,
-                                             providing competitive insights into Nissan EVs.</li>
-                                   </ul>
+                              
                               </div>
                          </li>
 
@@ -390,14 +552,7 @@ http://www.tooplate.com/view/2087-kalay
                                         <span> | </span>
                                         <span>Jan. 2024 - June 2024</span>
                                    </em>
-                                   <ul style="list-style-type:disc;">
-                                        <li>Managed a team of 20+ TAs and supported 300+ students in understanding
-                                             advanced Computer Vision concepts.</li>
-                                        <li>Developed comprehensive lecture materials on Linear Algebra, Machine
-                                             Learning, and Image Processing algorithms.</li>
-                                        <li>Provided 1-on-1 guidance and group reviews, improving student comprehension
-                                             and problem-solving skills.</li>
-                                   </ul>
+          
                               </div>
                          </li>
 
@@ -411,14 +566,7 @@ http://www.tooplate.com/view/2087-kalay
                                         <span> | </span>
                                         <span>June 2023 - Aug. 2023</span>
                                    </em>
-                                   <ul style="list-style-type:disc;">
-                                        <li>Processed 1M+ financial transactions to identify trends and detect fraud,
-                                             using EDA to deliver actionable insights.</li>
-                                        <li>Implemented ML models that reduced false-positive alerts by 30%, enhancing
-                                             the efficiency of a bank’s AML program.</li>
-                                        <li>Presented findings to the C-suite, enabling faster decision-making and
-                                             improving detection speed by 17%.</li>
-                                   </ul>
+                                   
                               </div>
                          </li>
 
@@ -432,15 +580,7 @@ http://www.tooplate.com/view/2087-kalay
                                         <span> | </span>
                                         <span>July 2020 - Aug. 2020</span>
                                    </em>
-                                   <ul style="list-style-type:disc;">
-                                        <li>Analyzed market trends, competitive landscapes, and regulatory shifts in the
-                                             Aerospace & Defense sectors, identifying growth opportunities for SAP
-                                             services.</li>
-                                        <li>Prepared detailed financial reports with future projections, enabling
-                                             strategic decision-making during the pandemic.</li>
-                                        <li>Proposed actionable recommendations, directly influencing business
-                                             development initiatives in high-potential markets.</li>
-                                   </ul>
+                                   
                               </div>
                          </li>
 
@@ -454,14 +594,7 @@ http://www.tooplate.com/view/2087-kalay
                                         <span> | </span>
                                         <span>June 2022 - Jan. 2023</span>
                                    </em>
-                                   <ul style="list-style-type:disc;">
-                                        <li>Designed a Developer Portal using React and Node.js, enabling interaction
-                                             with 50+ APIs and increasing developer efficiency.</li>
-                                        <li>Optimized vehicle data accuracy by 20% through AWS Glue pipelines and
-                                             seamless API integration.</li>
-                                        <li>Collaborated in Agile Scrum meetings, contributing to sprint planning and
-                                             retrospectives.</li>
-                                   </ul>
+                                   
                               </div>
                          </li>
 
@@ -475,12 +608,7 @@ http://www.tooplate.com/view/2087-kalay
                                         <span> | </span>
                                         <span>June 2020 - Aug. 2020</span>
                                    </em>
-                                   <ul style="list-style-type:disc;">
-                                        <li>Developed a Selenium-based RPA solution, improving response time to vehicle
-                                             security breaches by fleet managers.</li>
-                                        <li>Conducted on-site manufacturing assessments to advance roadmaps for RPA and
-                                             web automation.</li>
-                                   </ul>
+                                   
                               </div>
                          </li>
 
@@ -492,179 +620,7 @@ http://www.tooplate.com/view/2087-kalay
 
 
 
-     <!-- PROJECT SECTION -->
-     <section id="about" class="parallax-section">
-          <div class="container">
-               <div class="row">
-
-                    <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
-                         <!-- SECTION TITLE -->
-                         <h2>Projects</h2>
-                         <p>Click on any project to learn more</p>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                         <a target="_blank" href="https://github.com/mayigrin/movieFindr">
-                              <div class="service-thumb">
-                                   <i class="fa fa-film" style="font-size: 45px; padding-left: 15px;"></i>
-                                   <h4 class="white-color">Movie Findr</h4>
-                                   <p>This program (built for HackMIT 2020) lets users swipe through movies or type in
-                                        their favorites and then easily figure out what movie to watch with their
-                                        friends.</p>
-                                   <div class="skill-container">
-                                        <button class="skill">
-                                             <h6>Python</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>Django</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>React</h6>
-                                        </button>
-                                   </div>
-                              </div>
-                         </a>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                         <a target="_blank" href="https://devpost.com/software/autobrailler">
-                              <div class="service-thumb">
-                                   <i class="fa fa-blind" style="font-size: 45px; padding-left: 15px;"></i>
-                                   <h4 class="white-color">AutoBrailler</h4>
-                                   <p>This device sits on a Braille typewriter and connects to a computer. The
-                                        associated program takes in a text file and triggers the appropriate buttons on
-                                        the brailler to type the file contents.</p>
-                                   <div class="skill-container">
-                                        <button class="skill">
-                                             <h6>Arduino</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>Python</h6>
-                                        </button>
-                                   </div>
-                              </div>
-                         </a>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                         <a target="_blank" href="https://github.com/mayigrin/alumni-map-prototype">
-                              <div class="service-thumb">
-                                   <i class="fa fa-map-marker" style="font-size: 45px; padding-left: 15px;"></i>
-                                   <h4 class="white-color">Alumni Map</h4>
-                                   <p>I created a page for the MIT Muses website that features an interactive map & list
-                                        that are autopopulated by Google Forms responses to help keep Muses members and
-                                        alumni connected.</p>
-                                   <div class="skill-container">
-                                        <button class="skill">
-                                             <h6>HTML</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>CSS</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>Javascript</h6>
-                                        </button>
-                                   </div>
-                              </div>
-                         </a>
-                    </div>
-
-               </div>
-               <br>
-               <br>
-               <div class="row">
-
-                    <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                         <a target="_blank" href="https://github.com/mit-quest/k12scratch-GANs">
-                              <div class="service-thumb">
-                                   <i class="fa fa-paint-brush" style="font-size: 45px; padding-left: 15px;"></i>
-                                   <h4 class="white-color">Scratch GANPaint Extension</h4>
-                                   <p>I adapted a game that interacts with a GAN for the popular coding platform for
-                                        kids, Scratch. I did both the ML model setup and training, and the front-end &
-                                        back-end intergration.</p>
-                                   <div class="skill-container">
-                                        <button class="skill">
-                                             <h6>Javascript</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>Python</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>Cuda</h6>
-                                        </button>
-                                   </div>
-                              </div>
-                         </a>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                         <a target="_blank" href="https://github.com/mayigrin/proGAN_translation">
-                              <div class="service-thumb">
-                                   <i class="fa fa-cogs" style="font-size: 50px; padding-left: 15px;"></i>
-                                   <h4 class="white-color">ProGAN Translation</h4>
-                                   <p>I built code to convert a Tensorflow-trained proGAN into a Pytorch model with the
-                                        same structure to allow for model dissection.</p>
-                                   <div class="skill-container">
-                                        <button class="skill">
-                                             <h6>Python</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>Cuda</h6>
-                                        </button>
-                                   </div>
-                              </div>
-                         </a>
-                    </div>
-
-               </div>
-               <br>
-               <br>
-               <div class="row">
-
-                    <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-                         <a target="_blank" href="https://github.com/realTushar3012/Tushar-Chaturvedi-Website">
-                              <div class="service-thumb">
-                                   <i class="fa fa-mouse-pointer" style="font-size: 50px; padding-left: 15px;"></i>
-                                   <h4 class="white-color">Personal Website</h4>
-                                   <p>I built this website by combining two existing HTML/CSS & Javascript templates and
-                                        modifying the result to fit my needs. </p>
-                                   <div class="skill-container">
-                                        <button class="skill">
-                                             <h6>HTML</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>CSS</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>Javascript</h6>
-                                        </button>
-                                   </div>
-                              </div>
-                         </a>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                         <a target="_blank" href="https://github.com/mayigrin/custom-chrome-extension">
-                              <div class="service-thumb">
-                                   <i class="fa fa-window-maximize" style="font-size: 50px; padding-left: 15px;"></i>
-                                   <h4 class="white-color">Custom Chrome Extension</h4>
-                                   <p>Overrides "new tab" page and shows html page that displays date & time, useful
-                                        links, and a notepad that can be edited and saved.</p>
-                                   <div class="skill-container">
-                                        <button class="skill">
-                                             <h6>HTML</h6>
-                                        </button>
-                                        <button class="skill">
-                                             <h6>Javascript</h6>
-                                        </button>
-                                   </div>
-                              </div>
-                         </a>
-                    </div>
-
-               </div>
-          </div>
-     </section>
+     
 
 
      <!-- EXTRACURRICULAR SECTION -->
@@ -722,7 +678,7 @@ http://www.tooplate.com/view/2087-kalay
                          <div class="col-md-8 col-sm-12">
                               <div class="about-thumb">
                                    <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
-                                        <a target="_blank" href="https://upop.mit.edu/">
+                                        <a target="_blank" href="">
                                              <h2>Japan National Cricket Team</h2>
                                         </a>
                                         <br>
@@ -754,7 +710,7 @@ http://www.tooplate.com/view/2087-kalay
                          <div class="col-md-8 col-sm-12">
                               <div class="about-thumb">
                                    <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
-                                        <a target="_blank" href="http://skydive.mit.edu/">
+                                        <a target="_blank" href="">
                                              <h2>Cornell Tech Consulting</h2>
                                         </a>
                                         <br>
